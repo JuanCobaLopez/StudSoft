@@ -1,0 +1,32 @@
+[class*="grid_"] {
+  margin-left: 90px;
+}
+.ancho {
+  width: 170px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+.page1_header .banner {
+  background-color: #088389;
+  color: #ffffff;
+  display: block;
+  width: 50%;
+  text-align: center;
+  float: left;
+  font-size: 18px;
+  padding: 10px 0 14px;
+}
+.page1_header .banner:first-child + .banner {
+  background-color: #00b1ba;
+}
+.page1_header .banner:first-child + .banner + .banner {
+  background-color: #00b1ba;
+}
+.page1_header .banner:hover {
+  background-color: #000000 !important;
+}
