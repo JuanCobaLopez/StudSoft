@@ -1,0 +1,9 @@
+<?php
+session_start();
+$_SESSION['pagina']=$_GET["pagina"];
+$_SESSION['materia']=$_GET["materia"];
+$_SESSION['id_materia']=$_GET["id_materia"];
+$_SESSION['grupo_materia']=$_GET["grupo_materia"];
+$_SESSION['contrasena_materia']=$_GET["contrasena_materia"];
+header("Location:home.php");
+?>
