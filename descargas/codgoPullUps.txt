@@ -1,0 +1,14 @@
+void setup() {
+bitWrite(DDRB, PB5,1);
+bitWrite(DDRD, PD7,0);
+bitWrite(DDRD, PD6,0);
+bitWrite(MCUCR, PUD,false);  // Habilita pullups de entradas
+bitWrite(PORTD, PD7,1);
+bitWrite(PORTD, PD6,true);  
+}
+void loop() {
+if (bitRead(PIND, PIND7) == LOW)  // 
+bitWrite(PORTB, PB5,HIGH);
+if (bitRead(PIND, PIND6) == LOW)  // 
+bitWrite(PORTB, PB5,LOW);
+}
